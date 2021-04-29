@@ -19,12 +19,12 @@ class VariableKotlinActivity : AppCompatActivity() {
         var clickCount = 0
         val startTime = System.currentTimeMillis()
         val sTimeStamp = SimpleDateFormat("HH:mm:ss", Locale.KOREA).format(startTime)
-        txtActivityStartTime.text = "Activity start time = $(sTimeStamp)"
+        txtActivityStartTime.text = "Activity start time = $sTimeStamp"
 
         btnClickMe.setOnClickListener {
 
             clickCount++
-            txtCountBtnClicks.text = "Button clicks: $(clickCount)"
+            txtCountBtnClicks.text = "Button clicks: $clickCount"
         }
     }
 }
